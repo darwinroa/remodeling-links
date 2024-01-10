@@ -1,0 +1,184 @@
+:root {
+  --color-main: #ad1715;
+  --color-secundary: #f6b841;
+  --color-dark: #000000;
+  --color-light: #ffffff;
+}
+
+@font-face {
+  font-family: 'bebas neue';
+  src: url('./../fonts/BebasNeue-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'poppins';
+  src: url('./../fonts/Poppins-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+
+body {
+  line-height: 1.5;
+}
+
+.rmdl-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.rmdl-overlay {  
+  height: 100%;
+  width: 100%;
+  background-image: url(./../img/bg-section-transformed.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: .5;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.rmdl-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1140px;
+  margin: auto;
+  position: relative;
+  padding: 3rem 1rem;
+}
+
+.rmdl-container-logo {
+  margin: 0;
+}
+
+.rmdl-title {
+  color: var(--color-main);
+  font-family: 'bebas neue',Sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  margin: 0;
+}
+
+.rmdl-description {
+  text-align: center;
+  color: var(--color-dark);
+  font-family: poppins,Sans-serif;
+  font-weight: 400;
+}
+
+.rmdl-boxes {
+  width: 100%;
+}
+
+.rmdl-container-boxes {
+  display: flex;
+  margin-top: 4.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.rmdl-card {
+  width: 100%;
+  max-width: 375px;
+}
+
+.rmdl-card-container {
+  padding: 1rem;
+  margin: 15px;
+  background-color: var(--color-main);
+  border-radius: 20px;
+}
+
+.rmdl-card-icon {
+  margin: 0;
+  margin-top: -7rem;
+}
+
+.rmdl-card-title {
+  font-family: bebas neue,Sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  color: var(--color-light);
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.rmdl-btn-container {
+  margin-bottom: 1rem;
+  line-height: 1;
+}
+
+.rmdl-card-btn {
+  font-family: poppins,Sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1;
+  text-decoration: none;
+  color: var(--color-light);
+  padding: 12px 24px;
+  background-color: var(--color-secundary);
+  border-radius: 3px;
+  transition: all .3s;
+}
+
+.rmdl-card-btn:hover {
+  color: var(--color-secundary);
+  background-color: var(--color-light);
+}
+
+.rmdl-social-media-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.rmdl-social-media-container a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-main);
+  border-radius: 10%;
+  transition: all .3s;
+}
+
+.rmdl-social-media-container svg {
+  width: 25px;
+  height: 25px;
+  fill: var(--color-light);
+}
+
+.rmdl-social-media-container a:hover {
+  background-color: #a41a17ab;
+}
+
+@media screen and (max-width: 1024px) {
+  .rmdl-container {
+    max-width: 767px;
+  }
+
+  .rmdl-container-boxes {
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  .rmdl-card {
+    max-width: 500px;
+  }
+
+  .rmdl-card-icon img {
+    width: 60%;
+    height: auto;
+  }
+  
+  .rmdl-title {
+    font-size: 25px;
+  }
+}
